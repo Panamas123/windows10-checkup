@@ -152,7 +152,7 @@ type C:\WINDOWS\System32\drivers\etc\hosts | findstr /v "^#"
 CALL :ColorLine " DNS CACHE"
 ipconfig /displaydns | findstr "Record" | findstr "Name Host"
 ECHO.
-CALL :ColorLine " BASIC USER INFO
+CALL :ColorLine " BASIC USER INFO"
 ECHO.   [i] Check if you are inside the Administrators group or if you have enabled any token that can be use to escalate privileges like SeImpersonatePrivilege, SeAssignPrimaryPrivilege, SeTcbPrivilege, SeBackupPrivilege, SeRestorePrivilege, SeCreateTokenPrivilege, SeLoadDriverPrivilege, SeTakeOwnershipPrivilege, SeDebbugPrivilege
 ECHO.   [?] https://book.hacktricks.xyz/windows/windows-local-privilege-escalation#users-and-groups
 ECHO.
